@@ -55,11 +55,3 @@ Included with Seaborn:
 ```bash
 pip install -r requirements.txt
 
-## Run Locally
-
-Clone the project and run the notebook:
-
-```bash
-git clone https://github.com/yourusername/loan-eligibility-prediction.git
-cd loan-eligibility-prediction
-jupyter notebook "Maryam'sproject_Final.ipynb"
