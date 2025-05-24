@@ -1,57 +1,80 @@
-# loan-eligibility-prediction
 # Loan Eligibility Prediction
 
-This project aims to automate the process of determining whether an individual is eligible for a loan using machine learning techniques. The dataset contains various demographic and financial attributes of loan applicants.
+This project automates the process of determining whether an individual is eligible for a loan using machine learning techniques. The dataset includes various demographic and financial attributes of loan applicants.
 
 ## Objective
-Automate the loan approval eligibility process based on historical data.
+
+To automate the loan approval eligibility process based on historical data using machine learning models.
 
 ## Dataset Features
 
-- Gender: Male / Female
-- Married: Yes / No
-- Dependents: 0 / 1 / 2 / 3+
-- Education: Graduate / Not Graduate
-- Self_Employed: Yes / No
-- ApplicantIncome: Numeric
-- CoapplicantIncome: Numeric
-- LoanAmount: Numeric
-- Loan_Amount_Term: Loan term in days
-- Credit_History: 1 (good), 0 (bad)
-- Property_Area: Urban / Semiurban / Rural
-- Loan_Status: Y (approved) / N (rejected)
+* **Gender**: Male / Female
+* **Married**: Yes / No
+* **Dependents**: 0 / 1 / 2 / 3+
+* **Education**: Graduate / Not Graduate
+* **Self\_Employed**: Yes / No
+* **ApplicantIncome**: Numeric
+* **CoapplicantIncome**: Numeric
+* **LoanAmount**: Numeric
+* **Loan\_Amount\_Term**: Loan term in days
+* **Credit\_History**: 1 (Good) / 0 (Bad)
+* **Property\_Area**: Urban / Semiurban / Rural
+* **Loan\_Status**: Y (Approved) / N (Rejected)
 
-## Project Steps
+## Project Workflow
 
-### 1. Preprocessing
-- Handling missing values
-- Label encoding categorical features
-- Normalization of numeric features
-- Splitting data (65% train / 20% validation / 15% test)
+### 1. Data Preprocessing
+
+* Handle missing values
+* Encode categorical variables
+* Normalize numeric features
+* Split data into training (65%), validation (20%), and test sets (15%)
 
 ### 2. Modeling
-- Logistic Regression
-- K-Nearest Neighbors
-- Artificial Neural Network
 
-### 3. Evaluation
-- Accuracy
-- Precision, Recall, F1-Score
-- Comparison across models
+* Logistic Regression
+* K-Nearest Neighbors (KNN)
+* Artificial Neural Network (ANN)
 
-### 4. Optimization
-- Feature Engineering (Total_Income)
-- SMOTE for class balancing
-- Visual insights with Seaborn
+### 3. Model Evaluation
+
+* Accuracy
+* Precision, Recall, F1-Score
+* Comparison across models
+
+### 4. Optimization Techniques
+
+* Feature Engineering (e.g., `Total_Income`)
+* Class balancing using SMOTE
+* Visual insights using Seaborn
 
 ## Visualizations
-Included with Seaborn:
-- Countplots of Loan Status
-- Credit History effect
-- Income distribution analysis
 
-## Requirements
+Visual analysis using Seaborn includes:
 
-```bash
-pip install -r requirements.txt
+* Count plots of Loan Status
+* Effect of Credit History
+* Income distribution analysis
 
+## Getting Started
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/maryousefi/loan-eligibility-prediction.git
+   cd loan-eligibility-prediction
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the Jupyter Notebook:
+
+   ```bash
+   jupyter notebook "Maryam'sproject_final.ipynb"
+   ```
