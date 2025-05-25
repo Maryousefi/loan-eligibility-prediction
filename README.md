@@ -56,6 +56,7 @@ Visual analysis using Seaborn includes:
 * Effect of Credit History
 * Income distribution analysis
 
+
 ## Getting Started
 
 ### Installation
